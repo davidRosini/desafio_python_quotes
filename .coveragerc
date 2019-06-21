@@ -1,0 +1,3 @@
+[run]
+source = desafio_python_quotes
+omit = desafio_python_quotes/test*

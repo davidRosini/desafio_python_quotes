@@ -1,0 +1,15 @@
+{% extends "layout_home.jinja2" %}
+
+{% block content %}
+    <div class="content">
+        <h2>Quotes</h2>
+    </div>
+
+    <div class="content">
+        <ul>
+            {% for quote in quotes %}
+                <li><a href="/quotes/{{ loop.index }}">{{ loop.index }}: {{ quote }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock content %}
